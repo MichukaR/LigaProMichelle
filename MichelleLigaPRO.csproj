@@ -8,4 +8,10 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <None Remove="Views\Equipo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Equipo\Lista.cshtml" />
+  </ItemGroup>
 </Project>
