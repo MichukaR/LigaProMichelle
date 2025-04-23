@@ -1,0 +1,54 @@
+@model List<MichelleLigaPRO.Models.Equipo>
+@{
+    ViewData["Title"] = "Tabla de Posiciones";
+}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/styles.css" />
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+<div class="container mt-5">
+    <h2>@ViewData["Title"]</h2>
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Partidos Jugados</th>
+            <th>Partidos Ganados</th>
+            <th>Partidos Empatados</th>
+            <th>Partidos Perdidos</th>
+            <th>Puntos</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var equipo in Model)
+        {
+            <tr>
+                <td>@equipo.Nombre</td>
+                <td>@equipo.PartidosJugados</td>
+                <td>@equipo.PartidosGanados</td>
+                <td>@equipo.PartidosEmpatados</td>
+                <td>@equipo.PartidosPerdidos</td>
+                <td>@equipo.TotalPuntos</td>
+                <td>
+                    <a asp-action="InformacionEquipo" asp-route-nombre="@equipo.Nombre" class="btn btn-info">Ver información Equipo</a>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

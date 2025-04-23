@@ -28,7 +28,7 @@ public class EquipoRepository
             };
         }
 
-        public IEnumerable<Equipo> DevuelveListadoEquipos()
+        public List<Equipo> DevuelveListadoEquipos()
         {
             return _equipos.OrderByDescending(e => e.TotalPuntos).ToList(); 
         }
