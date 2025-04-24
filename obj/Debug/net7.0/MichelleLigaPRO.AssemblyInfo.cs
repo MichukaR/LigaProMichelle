@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MichelleLigaPRO")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b89c47035fcafb31d8a41cb8b744c9db6212bc8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3123a14b03a352d3e67d0f1fd03197f754737eab")]
 [assembly: System.Reflection.AssemblyProductAttribute("MichelleLigaPRO")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MichelleLigaPRO")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
